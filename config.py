@@ -1,9 +1,6 @@
 import os
-from dotenv import load_dotenv
 
-load_dotenv()
-
-TOKEN = os.getenv('BOT_TOKEN')
-api_secret = os.getenv('API_SECRET')
-api_key = os.getenv('API_KEY')
-FAUNA_KEY = os.getenv('FAUNA_KEY')
+TOKEN = os.environ['BOT_TOKEN']
+api_secret = os.environ['API_SECRET']
+api_key = os.environ['API_KEY']
+FAUNA_KEY = os.environ['FAUNA_KEY']
