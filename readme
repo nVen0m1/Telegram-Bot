@@ -1,0 +1,60 @@
+SMEbot Telegram Bot Project - README
+Overview
+SMEbot is a Telegram bot designed to facilitate interactions between Small and Medium-sized Enterprises (SMEs) and customers. It allows SMEs to set up virtual shops, showcase their products, and interact with potential buyers. Customers can browse products, place orders, and select their favorite shops for updates.
+
+Features
+User Registration: New and returning users can register as either a customer or an SME.
+Product Showcase: SMEs can add, view, and manage their products.
+Customer Interaction: Customers can view products, place orders, and contact business owners.
+Return to Shop List: Users can navigate back to the main shop list.
+FaunaDB Integration: User data, products, and business details are stored and managed using FaunaDB.
+FaunaDB Collections and Indexes
+Collections:
+Users: Stores user data including name, email, phone number, SME ownership status, preferences, and Telegram chat ID.
+Products: Contains product information such as name, description, price, image URL, associated SME, SME chat ID, and category.
+Business: Holds business details like name, email, address, telephone, and category.
+Indexes:
+users_by_name: Facilitates searching users by their name.
+product_by_business: Helps in fetching products associated with a particular business.
+business_by_name: Used for retrieving business details by business name.
+business_by_category: Assists in filtering businesses based on their category.
+Installation and Setup
+Clone the Repository: Clone the SMEbot project to your local machine.
+
+Install Dependencies: Run pip install -r requirements.txt to install necessary Python libraries.
+
+Set Up FaunaDB:
+
+Create the above-mentioned collections and indexes in your FaunaDB account.
+Generate a server key in FaunaDB and store it securely.
+Bot Token:
+
+Create a new bot in Telegram using BotFather.
+Store the bot token securely.
+Environment Variables:
+
+Set environment variables for the FaunaDB key and Telegram bot token.
+Running the Bot:
+
+Execute python main.py to start the bot.
+Usage
+Starting the Bot: Send /start to initiate interaction with the bot.
+Registration: Follow the bot's prompts to register as a new or returning user.
+SME Setup: If registering as an SME, provide business details and add products.
+Customer Interaction: Browse shops, view products, and contact SMEs.
+Contributing
+Contributions to SMEbot are welcome. Please follow the standard fork-and-pull request workflow.
+
+Fork the repository and create your feature branch.
+Make your changes and test them thoroughly.
+Submit a pull request with a clear description of your updates.
+Support
+For support or to report issues, please file a ticket on the project's issue tracker.
+
+Thank you for using or contributing to SMEbot!
+
+
+
+
+
+
